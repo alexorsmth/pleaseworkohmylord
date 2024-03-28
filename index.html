@@ -37,7 +37,18 @@
     <h2 class="fade-in">Do you choose to go in?</h2>
 
     <button onclick="clearPage()">ummm sure...</button>
+     <button id="myButton" onclick="changeText()">No I dont think I will</button>
 
+    <script>
+        function changeText() {
+            var button = document.getElementById("myButton");
+            if (button.innerHTML === "No I dont think I will") {
+                button.innerHTML = "Dont be a pussy";
+            } 
+        }
+    </script>
+
+    
     <script>
         function clearPage() {
             document.body.innerHTML = `
